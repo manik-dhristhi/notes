@@ -15,7 +15,7 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0  # Ensures we have both PR base and head for a proper diff
+          fetch-depth: 0 # Ensures we have both PR base and head for a proper diff
 
       - name: Get Diff
         run: |
@@ -45,7 +45,7 @@ jobs:
 
           # Construct the request body using jq to ensure valid JSON formatting
           jq -n --arg prompt "$PROMPT" '{
-            "model": "o3-mini",
+            "model": "o1",
             "reasoning_effort": "high",
             "messages": [
               {
