@@ -153,7 +153,7 @@ jobs:
           jq -n --arg system_content "You are an Enterprise Code Assistant ensuring the code follows best practices." \
                 --arg user_content "$PROMPT" \
           '{
-            "model": "${{ vars.MODELNAME }}",
+            "model": "gpt-4",
             "messages": [
               {
                 "role": "system",
