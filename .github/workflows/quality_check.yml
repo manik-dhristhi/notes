@@ -45,7 +45,7 @@ jobs:
 
           # Construct the request body using jq to ensure valid JSON formatting
           jq -n --arg prompt "$PROMPT" '{
-            "model": "o1",
+            "model": "o3-mini",
             "reasoning_effort": "high",
             "messages": [
               {
