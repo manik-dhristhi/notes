@@ -1,0 +1,26 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: notes
+  title: Notes
+  description: testing this notes app on catalog
+  annotations:
+    github.com/project-slug: manik-dhristhi/notes
+    backstage.io/techdocs-ref: dir:.
+  tags:
+    - notes
+    - typescript
+    - frontend
+    - dhristhi
+  links:
+    - url: https://github.com/manik-dhristhi/notes
+      title: Repository
+      icon: github
+    - url: https://github.com/manik-dhristhi/my-demo-app/actions
+      title: CI/CD Pipeline
+      icon: github
+spec:
+  type: website
+  lifecycle: experimental
+  owner: user:default/guest
+  system: dhristhi-frontend
